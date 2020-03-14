@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+
+.color-primary {
+    color: #2D9CDB;
+}
+
+.transparent {
+    opacity:1.0;
+}
+
+.about {
+
+    background-color:black;
+    height:100vh;
+}
+
+.work{
+    height:100vh;
+    background-color:black;
+}
+
+.big{
+    font-size:180px;
+}
+
+.imgWrap {
+	overflow: hidden;
+}
+.imgEff {
+	position: relative;
+	width: 320px;
+	height: 180px;
+	transition-duration: 0.3s;
+}
+.imgEff:hover {
+	transform: scale(1.1);
+}
+.portfolio .imgEff:before {
+	position: absolute;
+	width: 320px;
+	height: 180px;
+	transition-duration: 0.3s;
+	opacity: 0; /* 見えないように透過しておく */
+	content: "My portfolio site"; /* 表示するテキスト */
+	background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); /* けっこう暗くしないと文字が見にくいので注意 */
+	display: flex; /* 文字の中央配置 */
+	justify-content: center; /* 文字の中央配置 */
+	align-items: center; /* 文字の中央配置 */
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 2px #000;
+	filter: blur(4px); /* ブラー効果 */
+}
+.kimetsu .imgEff:before {
+	position: absolute;
+	width: 320px;
+	height: 180px;
+	transition-duration: 0.3s;
+	opacity: 0; /* 見えないように透過しておく */
+	content: "My tweet app"; /* 表示するテキスト */
+	background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); /* けっこう暗くしないと文字が見にくいので注意 */
+	display: flex; /* 文字の中央配置 */
+	justify-content: center; /* 文字の中央配置 */
+	align-items: center; /* 文字の中央配置 */
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 2px #000;
+	filter: blur(4px); /* ブラー効果 */
+}
+
+.imgEff:hover:before {
+	opacity: 1; /* マウスオーバーで可視化 */
+	transform: scale(1.3); /* 文字の拡大率 */
+	filter: blur(0); /* ブラー効果を解除 */
+}
+
+
+
+
+
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+.animated1 {
+    opacity: 0;
+}
+
+.card {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+
+
+.top {
+    position: relative;
+}
+
+.top,
+.top__bg {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image:url("./../image/muscle-training1.jpg");
+}
+
+.top__title {
+    margin-bottom: 10px;
+    font-size: 4rem;
+    line-height: 77px;
+
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+
+
+
+.top__bg {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.top__text-box {
+    position: relative;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+
+    font-weight: 100;
+}
+
+
+
+.content__title {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color:white;
+}
+
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
