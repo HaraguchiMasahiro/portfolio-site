@@ -43,7 +43,7 @@
 	height: 180px;
 	transition-duration: 0.3s;
 	opacity: 0;
-	content: "My portfolio"; 
+	content: "My portfolio site"; 
 	background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); 
 	display: flex; 
 	justify-content: center; 
@@ -59,7 +59,11 @@
 }
 
 .vue-todo .imgEff:before {
-    content:"My todo app"
+    content:"TODO app tutorial"
+}
+
+.react-recipe-tutorial .imgEff:before{
+    content:"Recipe site tutorial"
 }
 
 .imgEff:hover:before {
